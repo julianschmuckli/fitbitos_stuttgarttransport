@@ -21,6 +21,11 @@ function getStations(position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
   
+  //@Test
+  /*var location_chosen = 0;
+  latitude = [48.775707, 48.741071][location_chosen];
+  longitude = [9.183226, 9.171953][location_chosen];*/
+  
   console.log("Location: "+latitude+", "+longitude);
   var url = "https://www3.vvs.de/mngvvs/XML_STOPFINDER_REQUEST?SpEncId=0&coordOutputFormat=EPSG:4326&name_sf=coord:"+longitude+":"+latitude+":WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&serverInfo=1&suggestApp=vvs&type_sf=any&version=10.2.2.48";
   //console.log("Loading data from "+url);
